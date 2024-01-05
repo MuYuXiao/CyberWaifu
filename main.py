@@ -38,7 +38,9 @@ if tts_model == 'Edge':
 	api = config['TTS_Edge']['azure_speech_key']
 	if api == '':
 		use_emotion = False
-
+if tts_model == 'Bert':
+	
+	
 # Thoughts 思考链配置
 emoticons = config.items('Thoughts_Emoticon')
 load_emoticon(emoticons)
